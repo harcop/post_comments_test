@@ -15,7 +15,7 @@ async function poster() {
         if (!hashBody[postId]) {
             hashBody[postId] = []
         }
-        hashBody[postId].push(body)
+        hashBody[postId].push(`${body}\n`)
     }
 
     for(const post of posts) {
